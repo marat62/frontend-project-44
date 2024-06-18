@@ -16,18 +16,15 @@
     "brain-gcd": "bin/brain-gcd.js",
     "brain-progression": "bin/brain-progression.js",
     "brain-prime": "bin/brain-prime.js"
-    
   },
   "dependencies": {
     "readline-sync": "^1.4.10"
   },
   "devDependencies": {
-    "@eslint/compat": "^1.0.3",
-    "@eslint/js": "^9.4.0",
-    "eslint": "^9.4.0",
+    "@eslint/compat": "^1.1.0",
+    "@eslint/js": "^9.5.0",
+    "eslint": "^9.5.0",
     "eslint-plugin-react": "^7.34.2",
-    "globals": "^15.4.0"
+    "globals": "^15.6.0"
   }
-  
-  
 }
