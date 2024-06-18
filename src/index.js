@@ -1,44 +1,31 @@
 import readlineSync from 'readline-sync';
 
 const countRound = 3;
-export default (description, getQuestionAndAnswer) => {
-    console.log('Welcome to the Brain Games!')
-    const name = readlineSync.question('May I have your name? ');
-    console.log(`Hello, ${name}!`)
 
-    console.log(description)
-for (let i = 0; i < countRound; i++) {
-    const [question, currentAnswer] = getQuestionAndAnswer();
-    console.log(`Question: ${question}` )
+const Game = (description, generateRound) => {
+  console.log('Welcome to the Brain Games!');
+  const name = readlineSync.question('May I have your name? ');
+  console.log(`Hello, ${name}!`);
+  console.log(description);
 
-    const answer = readlineSync.question('You answer?: ');
+  for (let i = 0; i < countRound; i += 1) {
+    const [question, correctAnswer] = generateRound();
+    console.log(`Question: ${question}`);
+    const userAnswer = readlineSync.question('Your answer: ').toLowerCase();
 
-    if (answer === currentAnswer) {
-    console.log('correct')
-    } else {
-        console.log(`${answer} is wrong answer ;(. Correct answer was ${currentAnswer}.`)  
-
-        console.log(`Let's try again, ${name}`)
+    if (userAnswer !== correctAnswer) {
+      console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`);
+      console.log(`Let's try again, ${name}!`);
+      return;
     }
-}
-console.log(`Congratulations, ${name}`)
-}
+
+    console.log('Correct!');
+  }
+
+  console.log(`Congratulations, ${name}!`);
+};
+
+export default Game;
 
 
 
-
-
-// Welcome to the Brain Games!
-// May I have your name? Sam
-// Hello, Sam!
-// Answer "yes" if the number is even, otherwise answer "no".
-// Question: 15
-// Your answer: no
-// Correct!
-// Question: 6
-// Your answer: yes
-// Correct!
-// Question: 7
-// Your answer: no
-// Correct!
-// Congratulations, Sam!
