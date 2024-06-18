@@ -1,17 +1,17 @@
-import game from '../index.js';
+import game from "../index.js";
 
-const description = 'What is the result of the expression?';
+const description = "What is the result of the expression?";
 
 const getRandomIndex = (max) => Math.floor(Math.random() * max);
 const getRandomNumber = () => Math.floor(Math.random() * 100) + 1;
 
 const calculateResult = (num1, operator, num2) => {
   switch (operator) {
-    case '+':
+    case "+":
       return num1 + num2;
-    case '-':
+    case "-":
       return num1 - num2;
-    case '*':
+    case "*":
       return num1 * num2;
     default:
       throw new Error(`Unknown operator: ${operator}`);
@@ -19,7 +19,7 @@ const calculateResult = (num1, operator, num2) => {
 };
 
 const generateRound = () => {
-  const operators = ['+', '-', '*'];
+  const operators = ["+", "-", "*"];
   const num1 = getRandomNumber();
   const num2 = getRandomNumber();
   const randomOperator = operators[getRandomIndex(operators.length)];
