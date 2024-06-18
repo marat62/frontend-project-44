@@ -7,7 +7,7 @@ const gcd = (a, b) => {
   let firstValue = a;
   let secondValue = b;
 
-  while (secondValue === 0) {
+  while (secondValue !== 0) {
     const storage = secondValue;
     secondValue = firstValue % secondValue;
     firstValue = storage;
