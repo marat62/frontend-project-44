@@ -33,15 +33,15 @@ node bin/brain-prime
 
 
 Пример игры "Проверка на чётность"
-![alt text](image-3.png)
+![alt text](img/brain-even.png)
 
 Пример игры "НОД"
-![alt text](image-4.png)
+![alt text](img/brain-gcd.png)
 
 Пример игры "Арифметическая прогрессия"
-![alt text](image-5.png)
+![alt text](img/brain-progression.png)
 
 Пример игры "Простое ли число?"
-![alt text](image-6.png)
+![alt text](img/brain-prime.png)
 
 
