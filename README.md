@@ -29,7 +29,7 @@ node bin/brain-prime
 
 Пример игры "Калькулятор"
 
-![Иллюстрация к проекту](frontend-project-44/img/calculator.png)
+![Иллюстрация к проекту](https://github.com/marat62/frontend-project-44/blob/main/img/calculator.png)
 
 
 Пример игры "Проверка на чётность"
