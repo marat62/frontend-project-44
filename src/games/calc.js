@@ -1,9 +1,10 @@
-import game from '../index.js';
+import runGame from '../index.js';
+import { getRandomNumber, getRandomIndex }  from '../helpers.js'
+
 
 const description = 'What is the result of the expression?';
+const operators = ['+', '-', '*'];
 
-const getRandomIndex = (max) => Math.floor(Math.random() * max);
-const getRandomNumber = () => Math.floor(Math.random() * 100) + 1;
 
 const calculateResult = (num1, operator, num2) => {
   switch (operator) {
@@ -19,7 +20,7 @@ const calculateResult = (num1, operator, num2) => {
 };
 
 const generateRound = () => {
-  const operators = ['+', '-', '*'];
+
   const num1 = getRandomNumber();
   const num2 = getRandomNumber();
   const randomOperator = operators[getRandomIndex(operators.length)];
@@ -30,4 +31,4 @@ const generateRound = () => {
   return [question, correctAnswer];
 };
 
-export default () => game(description, generateRound);
+export default () => runGame(description, generateRound);

@@ -1,13 +1,15 @@
-import Game from '../index.js';
+import runGame from '../index.js';
+import { getRandomNumber}  from '../helpers.js'
+
 
 const description = 'Answer "yes" if the number is even, otherwise answer "no".';
 const isEven = (number) => number % 2 === 0;
 
 const generateRound = () => {
-  const randomNumber = Math.floor(Math.random() * 100) + 1;
-  const question = randomNumber;
-  const correctAnswer = isEven(randomNumber) ? 'yes' : 'no';
+ 
+  const question = getRandomNumber;
+  const correctAnswer = isEven(getRandomNumber) ? 'yes' : 'no';
   return [question, correctAnswer];
 };
 
-export default () => Game(description, generateRound);
+export default () => runGame(description, generateRound);
