@@ -3,8 +3,6 @@
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/24b12e592cb4f0512694/maintainability)](https://codeclimate.com/github/marat62/frontend-project-44/maintainability)
 
-## Описание проекта 
-Набор математических игр
 
 ## Запуск игры "Калькулятор"
 ```
