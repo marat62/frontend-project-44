@@ -19,10 +19,10 @@ const calculateResult = (num1, operator, num2) => {
   }
 };
 
-const generateRound = (min, max) => {
+const generateRound = () => {
 
-  const num1 = getRandomNumber(min, max);
-  const num2 = getRandomNumber(min, max);
+  const num1 = getRandomNumber(1, 100);
+  const num2 = getRandomNumber(1, 100);
   const randomOperator = operators[getRandomIndex(operators.length)];
 
   const question = `${num1} ${randomOperator} ${num2}`;
