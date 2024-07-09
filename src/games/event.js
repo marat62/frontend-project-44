@@ -1,7 +1,5 @@
 import runGame from "../index.js";
-import {
-  getRandomNumber
-} from "../helpers.js";
+import { getRandomNumber } from "../helpers.js";
 
 const description =
   'Answer "yes" if the number is even, otherwise answer "no".';
