@@ -1,5 +1,5 @@
 import runGame from '../index.js';
-import { getRandomNumber}  from '../helpers.js'
+import { getRandomNumber } from '../helpers.js';
 
 const description = 'What number is missing in the progression?';
 
@@ -16,9 +16,9 @@ const generateRound = () => {
 
   const hiddenElement = getRandomNumber(1, progression.length - 1);
   const correctAnswer = String(progression[hiddenElement]);
-  progression[hiddenElement] = "..";
+  progression[hiddenElement] = '..';
 
-  const question = progression.join(" ");
+  const question = progression.join(' ');
 
   return [question, correctAnswer];
 };

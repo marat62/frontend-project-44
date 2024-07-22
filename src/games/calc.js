@@ -1,7 +1,7 @@
 import runGame from '../index.js';
 import {
   getRandomNumber,
-  getRandomIndex
+  getRandomIndex,
 } from '../helpers.js';
 
 const description = 'What is the result of the expression?';
