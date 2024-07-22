@@ -1,4 +1,5 @@
 import runGame from '../index.js';
+
 import {
   getRandomNumber,
   getRandomIndex,
