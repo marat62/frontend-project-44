@@ -1,7 +1,7 @@
-import runGame from "../index.js";
+import runGame from '../index.js';
 import { getRandomNumber}  from '../helpers.js'
 
-const description = "What number is missing in the progression?";
+const description = 'What number is missing in the progression?';
 
 const generateRound = () => {
   const lengthProgression = getRandomNumber(5, 10);
