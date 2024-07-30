@@ -1,6 +1,6 @@
 # Устанавливаем зависимости Node.js
 install:
-    npm ci
+	npm ci
 
 brain-games:
 	node bin/brain-games.js
