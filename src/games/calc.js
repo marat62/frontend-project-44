@@ -24,10 +24,10 @@ const calculateResult = (num1, operator, num2) => {
 const generateRound = () => {
   const num1 = getRandomNumber(1, 100);
   const num2 = getRandomNumber(1, 100);
-  const randomOperator = operators[getRandomIndex(operators.length)];
+  const operator = operators[getRandomIndex(operators)];
 
-  const question = `${num1} ${randomOperator} ${num2}`;
-  const correctAnswer = calculateResult(num1, randomOperator, num2).toString();
+  const question = `${num1} ${operator} ${num2}`;
+  const correctAnswer = calculateResult(num1, operator, num2).toString();
 
   return [question, correctAnswer];
 };

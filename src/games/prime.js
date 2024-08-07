@@ -5,7 +5,11 @@ import { getRandomNumber } from '../helpers.js';
 const description = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
 const isPrime = (num) => {
+  if (num < 2) {
+    return false
+  }
   const limit = Math.sqrt(num);
+  
   for (let i = 2; i <= limit; i += 1) {
     if (num % i === 0) {
       return false;
@@ -17,7 +21,7 @@ const isPrime = (num) => {
 const generateRound = () => {
   const num = getRandomNumber(1, 100);
   const question = String(num);
-  const correctAnswer = isPrime(question) ? 'yes' : 'no';
+  const correctAnswer = isPrime(num) ? 'yes' : 'no';
 
   return [question, correctAnswer];
 };
