@@ -10,7 +10,9 @@ const buildProgression = (length, start, step) => {
     progression.push(start + step * i);
   } 
   return progression
-}
+
+  }
+
 
 const generateRound = () => {
   const length = getRandomNumber(5, 10);
