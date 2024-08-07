@@ -8,17 +8,12 @@ const buildProgression = (length, start, step) => {
 
   for (let i = 0; i < length; i += 1) {
     progression.push(start + step * i);
-  } 
-  return progression
-
-  }
-
-
+  } return progression;
+}
 const generateRound = () => {
   const length = getRandomNumber(5, 10);
   const start = getRandomNumber(1, 10);
   const step = getRandomNumber(1, 10);
-
   const progression = buildProgression(length, start, step);
 
   const hiddenElement = getRandomIndex(progression);
@@ -29,7 +24,5 @@ const generateRound = () => {
 
   return [question, correctAnswer];
 };
-
-
 
 export default () => runGame(description, generateRound);
